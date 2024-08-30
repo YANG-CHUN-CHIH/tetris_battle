@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tetris_battle.SceneController">
+   <children>
+      <AnchorPane layoutX="560.0" layoutY="720.0" />
+      <ButtonBar layoutX="200.0" layoutY="617.0" prefHeight="46.0" prefWidth="183.0" />
+      <ImageView fitHeight="762.0" fitWidth="583.0" layoutX="-11.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ControlWindow.jpg" />
+         </image>
+      </ImageView>
+    <Button layoutX="217.0" layoutY="566.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="43.0" prefWidth="98.0" stylesheets="@Menu.css" text="BACK">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="playButton" />
+            <String fx:value="controllerButton" />
+         </styleClass></Button>
+      <ImageView fitHeight="189.0" fitWidth="238.0" layoutX="162.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../arrowKeys.png" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="230.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rotate" textAlignment="CENTER" wrappingWidth="111.7125244140625">
+         <font>
+            <Font name="Blackadder ITC" size="36.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.7296954393386841" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="31.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Left" wrappingWidth="134.12460136413574">
+         <font>
+            <Font name="Blackadder ITC" size="32.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.3236040472984314" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596231">
+                     <color>
+                        <Color red="1.0" green="0.6200000047683716" blue="0.9657614231109619" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.6200000047683716" blue="0.9657614231109619" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="405.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Right" wrappingWidth="148.52462577819836">
+         <font>
+            <Font name="Blackadder ITC" size="32.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5454545535824515">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.9814814925193787" blue="0.9814814925193787" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="217.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Down" wrappingWidth="148.52462577819824">
+         <font>
+            <Font name="Blackadder ITC" size="32.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5454545535824515">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.36666667461395264" green="1.0" blue="0.4933333396911621" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="84.0" fitWidth="103.0" layoutX="58.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../XKey.png" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="64.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hold" wrappingWidth="69.68491363525402">
+         <font>
+            <Font name="Blackadder ITC" size="32.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596231">
+                     <color>
+                        <Color red="0.2199999988079071" green="1.0" blue="0.6585025191307068" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2199999988079071" green="1.0" blue="0.6585025191307068" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="266.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../spaceBar.jpg" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="331.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drop" wrappingWidth="69.6849136352539">
+         <font>
+            <Font name="Blackadder ITC" size="35.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596231">
+                     <color>
+                        <Color red="0.2199999988079071" green="1.0" blue="0.6585025191307068" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2199999988079071" green="1.0" blue="0.6585025191307068" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="77.0" fitWidth="105.0" layoutX="23.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../escKey.png" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="14.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exit Game" wrappingWidth="125.3246135711671">
+         <font>
+            <Font name="Blackadder ITC" size="32.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5454545535824515">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Only in Game)" wrappingWidth="167.72463798522938">
+         <font>
+            <Font name="Blackadder ITC" size="28.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>

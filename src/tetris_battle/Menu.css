@@ -1,0 +1,43 @@
+.playButton{
+	-fx-background-radius: 5em;
+	-fx-font-weight: bold;
+		font-weight: bold;
+	-fx-font-size: 30;
+		font-size: 30;
+	-fx-background-color: "lightblue";
+		background-color: "lightblue";
+
+}
+
+.playButton:hover{
+	-fx-background-radius: 5em;
+	-fx-font-weight: bold;
+		font-weight: bold;
+	-fx-font-size: 30;
+		font-size: 30;
+	-fx-background-color: "lightyellow";
+		background-color: "lightyellow";
+
+}
+
+.controllerButton{
+	-fx-background-radius: 5em;
+	-fx-font-weight: bold;
+		font-weight: bold;
+	-fx-font-size: 20;
+		font-size: 20;
+	-fx-background-color: "lightblue";
+		background-color: "lightblue";
+
+}
+
+.controllerButton:hover{
+	-fx-background-radius: 5em;
+	-fx-font-weight: bold;
+		font-weight: bold;
+	-fx-font-size: 20;
+		font-size: 20;
+	-fx-background-color: "lightyellow";
+		background-color: "lightyellow";
+
+}
